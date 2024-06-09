@@ -53,10 +53,10 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Venocyber_Tech.sendMessage(Pair_Code_By_Venocyber_Tech.user.id, { text: 'RCD;;;' + b64data });
+               let session = await Pair_Code_By_Venocyber_Tech.sendMessage(Pair_Code_By_Venocyber_Tech.user.id, { text: '' + b64data });
 
                let UNIQUE_MD_TEXT = `
-*_Pair Code Connected by  𝗱𝗲𝘅𝘁𝗲𝗿-md_*
+*_Pair Code Connected by  rcd-md_*
 *_Made With 🤍_*
 ______________________________________
 ╔════◇
@@ -66,15 +66,15 @@ ______________________________________
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
 ║❒ *Youtube:* _https://youtube.com/@Dextertoola999_
-║❒ *Owner:* _https://wa.me/message/LLGU3TSNGKH6J1_
-║❒ *Repo:* _https://github.com/DEXTER-BOT-1/DEXTER-V1-MD_
+║❒ *Owner:* _RCD TEAM_
+║❒ *Repo:* _https://github.com/DEXTER-BOT-1/RCD-MD_
 ║❒ *WaGroup:* _https://chat.whatsapp.com/HjTJEJm6IX14AxUCsqfOQJ_
-║❒ *WaChannel:* https://whatsapp.com/channel/0029VaZZclvLtOjKGav75L1B
-║❒ *𝗗𝗘𝗫𝗧𝗘𝗥 MD:* 
+║❒ *WaChannel:* _https://whatsapp.com/channel/0029Vag1WQFJf05dF0pQeU3u_
+║❒ *RCD MD:* 
 ╚══════════════════════╝ 
 _____________________________________
 
-_𝗗𝗘𝗫𝗧𝗘𝗥 𝗠𝗗_`
+_RCD 𝗠𝗗_`
  await Pair_Code_By_Venocyber_Tech.sendMessage(Pair_Code_By_Venocyber_Tech.user.id,{text:UNIQUE_MD_TEXT},{quoted:session})
  
 
